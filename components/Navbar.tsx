@@ -73,31 +73,31 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <a
-              href="#o-mne"
+            <Link
+              href="/o-mne"
               className="block text-lg hover:text-gray-600 transition-colors font-[family-name:var(--font-major-mono)]"
               onClick={() => setIsMenuOpen(false)}
             >
               O mne
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#moje-prace"
+            <Link
+              href="/moje-prace"
               className="block text-lg hover:text-gray-600 transition-colors font-[family-name:var(--font-major-mono)]"
               onClick={() => setIsMenuOpen(false)}
             >
               Moje práce
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#kontakt"
+            <Link
+              href="/kontakt"
               className="block text-lg hover:text-gray-600 transition-colors font-[family-name:var(--font-major-mono)]"
               onClick={() => setIsMenuOpen(false)}
             >
               Kontakt
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

@@ -2,7 +2,7 @@ import Navbar from '@/components/Navbar';
 import GalleryCarousel from '@/components/GalleryCarousel';
 import Image from 'next/image';
 
-export default function Home() {
+export default function MojePrace() {
   return (
     <div 
       className="min-h-screen"
@@ -25,53 +25,15 @@ export default function Home() {
       
       {/* Main Logo Section */}
       <div className="flex justify-center items-center pt-32 pb-16">
-        <Image
-          src="/logo 1 .png" 
-          alt="Main Logo" 
-          width={400} 
-          height={400}
-          className="object-contain"
-          priority
-        />
+        <div className="text-center">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-8" style={{ fontFamily: 'Font Awesome 6 Free' }}>
+            MOJE PRÁCE
+          </h1>
+        </div>
       </div>
 
-      {/* O MNE Section */}
-      <section id="o-mne" className="px-8 md:px-16 lg:px-24 pb-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-            {/* Text Content */}
-            <div className="flex flex-col justify-between">
-              <div>
-                <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6" style={{ fontFamily: 'Font Awesome 6 Free' }}>
-                  O MNE
-                </h2>
-                <div className="text-lg md:text-xl font-medium text-gray-700 leading-relaxed" style={{ fontFamily: 'var(--font-albert-sans)' }}>
-                  Som človek, ktorý hľadá pokoj v detailoch a krásu v jednoduchosti. Rada veci cítim – farby, materiály, atmosféru. Verím, že dizajn nie je len o tom, ako veci vyzerajú, ale aj o tom, aký pocit v nás zanechajú.
-                  Baví ma tvoriť s úmyslom. Premýšľať, ako niečo môže byť funkčné, ale zároveň jemné a prirodzené. Mám rada veci, ktoré pôsobia ľahko, no majú v sebe hĺbku.
-                  Inšpiruje ma realita, skutočné momenty, ticho, ľudia, ktorí sú úprimní v tom, kým sú. Aj malé detaily, ktoré si väčšina nevšimne, ale práve tie robia veci živými.
-                </div>
-              </div>
-            </div>
-
-            {/* Photo */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-            <Image
-                  src="/B948A0C4-25E4-49B6-B134-C6376A251476.jpeg" 
-                  alt="Portrait" 
-                  width={450} 
-                  height={360}
-                  className="object-cover rounded-3xl shadow-lg border-4 border-black"
-                  style={{ aspectRatio: '5/4' }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* MOJE PROJEKTY Section */}
-      <section id="moje-prace" className="pb-20 pt-12">
+      <section className="pb-20 pt-12">
         {/* Title */}
         <div className="px-8 md:px-16 lg:px-24 mb-4">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 ml-36 md:ml-60 lg:ml-72" style={{ fontFamily: 'Font Awesome 6 Free' }}>
@@ -119,7 +81,7 @@ export default function Home() {
                 />
               </div>
               <div className="col-span-1">
-          <Image
+                <Image 
                   src="/E5B61F5F-D2B0-4FD2-9049-D105F9ECACCD.png" 
                   alt="NextLayer Project 3" 
                   width={450} 
@@ -154,7 +116,7 @@ export default function Home() {
             {/* Two Images Side by Side */}
             <div className="grid grid-cols-2 gap-4">
               <div className="col-span-1">
-          <Image
+                <Image 
                   src="/BH 1.png" 
                   alt="Bauhaus Poster 1" 
                   width={350} 
@@ -163,7 +125,7 @@ export default function Home() {
                 />
               </div>
               <div className="col-span-1">
-          <Image
+                <Image 
                   src="/BH 2.png" 
                   alt="Bauhaus Poster 2" 
                   width={350} 
@@ -278,7 +240,7 @@ export default function Home() {
       </section>
 
       {/* GALÉRIA SECTION */}
-      <section id="galeria" className="pb-20 pt-16 px-8 md:px-16">
+      <section className="pb-20 pt-16 px-8 md:px-16">
         {/* Title */}
         <div className="px-8 md:px-16 lg:px-24 mb-4">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 ml-36 md:ml-60 lg:ml-72" style={{ fontFamily: 'Font Awesome 6 Free' }}>
@@ -297,50 +259,6 @@ export default function Home() {
           <GalleryCarousel />
         </div>
       </section>
-
-      {/* FOOTER SECTION */}
-      <footer id="kontakt" className="bg-white/40 backdrop-blur-sm py-16 px-8 md:px-16">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/* Contact Information */}
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6" style={{ fontFamily: 'Font Awesome 6 Free' }}>
-                Kontakt
-              </h3>
-              <div className="space-y-3 text-lg text-gray-700" style={{ fontFamily: 'var(--font-albert-sans)' }}>
-                <p>+421 911 294 129</p>
-                <p>karolina.pifflova@gmail.com</p>
-                <p>@karolina_r_p_</p>
-              </div>
-            </div>
-
-            {/* Quick Links */}
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6" style={{ fontFamily: 'Font Awesome 6 Free' }}>
-                Rýchle odkazy
-              </h3>
-              <div className="space-y-3 text-lg text-gray-700" style={{ fontFamily: 'var(--font-albert-sans)' }}>
-                <a href="/o-mne" className="block hover:text-gray-900 transition-colors">O mne</a>
-                <a href="/moje-prace" className="block hover:text-gray-900 transition-colors">Moje práce</a>
-                <a href="/moje-prace#galeria" className="block hover:text-gray-900 transition-colors">Galéria</a>
-                <a href="/kontakt" className="block hover:text-gray-900 transition-colors">Kontakt</a>
-              </div>
-            </div>
-          </div>
-
-          {/* Credits */}
-          <div className="mt-16 pt-8 border-t border-gray-300">
-            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              <p className="text-gray-600" style={{ fontFamily: 'var(--font-albert-sans)' }}>
-                Designed by Karolína Romana Pifflová
-              </p>
-              <p className="text-gray-600" style={{ fontFamily: 'var(--font-albert-sans)' }}>
-                Created with ❤️ by NextLayer Studio
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
